@@ -87,7 +87,17 @@
     <script type='text/javascript' src='<%= request.getContextPath() %>/static/js/holder.js'></script>
     <script type="text/javascript" src="<%= request.getContextPath() %>/utils.js"></script>
     <script type="text/javascript" src="<%= request.getContextPath() %>/static/js/choice-support.js"> </script>
-
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118992346-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-118992346-1');
+    </script>
+    
+    
     <%--Gooogle Analytics recording.--%>
     <%
         if (analyticsKey != null && analyticsKey.length() > 0)

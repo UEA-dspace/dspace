@@ -20,10 +20,7 @@
 
 <%
     String sidebar = (String) request.getAttribute("dspace.layout.sidebar");
-%>
-
-            <%-- Right-hand side bar if appropriate --%>
-<%
+//             Right-hand side bar if appropriate
     if (sidebar != null)
     {
 %>
@@ -39,27 +36,43 @@
 </div>
 </main>
             <%-- Page footer --%>
-             <footer class="navbar navbar-inverse footer" >
-
-             <div id="designedby" class="container text-muted">
-
-              <a href="http://www3.uea.edu.br/">
-        				<img class="img-logo-button" src="<%= request.getContextPath() %>/image/logo-uea.png"
-                    alt="Logo UEA" />
-              </a>
-                <span class="pull-left text-uea">
-                    UNIVERSIDADE DO ESTADO DO AMAZONAS<br>
-                    Sistema Integrado de Bibliotecas SIB/UEA<br>
-                    +55 92 98410-6272 - bibliotecacentral@uea.edu.br<br>
-
-
-                </span>
-			   <div id="footer_feedback" class="pull-right">
+<footer class="navbar navbar-inverse footer" >
+    <%--<div class="container">--%>
+        <div class="row">
+            <div class="col-md-2 logos">
+                <a href="http://www3.uea.edu.br/">
+                    <img class="img-logo-button" src="<%= request.getContextPath() %>/image/logo-uea.png"
+                alt="Logo UEA" />
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h5 class="text-light">UNIVERSIDADE DO ESTADO DO AMAZONAS</h5>
+    
+                <address class="text-light">
+                    <strong>Sistema Integrado de Bibliotecas SIB/UEA</strong><br>
+                    <%--<p class="text-justify descricao">O Repositório Institucional da UEA tem a finalidade de tornar disponível em ambiente digital e interoperável, as produções científicas e acadêmicas, contribuindo para fortalecer o apoio ao processo de ensino e pesquisa. </p>--%>
+                     +55 92 98410-6272<br>
+                    <a class="text-light email-ri" href="mailto:bibliotecacentral@uea.edu.br">bibliotecacentral@uea.edu.br</a>
+                </address>
+            </div>
+            <div class="col-md-2 logos">
+                <a href="http://www.ibict.br/">
                     <img class ="img-ibict-logo" src="<%= request.getContextPath() %>/image/bannerIbict.png"
-           alt="Logo Ibict"/>
-         </div>
-			</div>
-    </footer>
+                    alt="Logo Ibict"/>
+                </a>
+            </div>
+            <div class="col-md-3 logos">
+                <a href="http://redenorte.ufam.edu.br/">
+                    <img class="rede_norte" src="<%= request.getContextPath() %>/image/logo_rede_norte.jpeg" alt="Logo Rede norte"/>
+                </a>
+            </div>
+        </div>
+    <%--</div>--%>
+    <div id="designedby" class="container text-muted">
+        <span class="pull-left text-uea"></span>
+        <%--<div id="footer_feedback" class="pull-right"></div>--%>
+    <%--</div>--%>
+</footer>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116070758-1"></script>
@@ -70,9 +83,6 @@
 
   gtag('config', 'UA-116070758-1');
 </script>
-
-
-
 
     </body>
 </html>

@@ -117,7 +117,7 @@
             <ul class="dropdown-menu">
                 <li><a href="<%= request.getContextPath() %>/documentos/resolucao_repositorio.pdf" target="_blank">Politica do Repositório</a></li>
                 <li><a href="<%= request.getContextPath() %>/documentos/TermoAutorizacaoPublicaDigital.doc" target="_blank">Termo de Autorização para Publicação Digital</a></li>
-                <li><a href="<%= request.getContextPath() %>/fichacatalografica.jsp">Ficha Catalográfica</a> </li>
+                <li><a href="http://repositorioinstitucional.uea.edu.br:8080/ficha/ficha_catalografica.php">Ficha Catalográfica</a> </li>
                 <li class="<%= ( currentPage.endsWith( "/help" ) ? "active" : "" ) %>"><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.index\") %>"><fmt:message key="jsp.layout.navbar-default.help"/></dspace:popup></li>
             </ul>
         </li>
