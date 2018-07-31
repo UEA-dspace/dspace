@@ -39,32 +39,30 @@
 <footer class="navbar navbar-inverse footer" >
     <%--<div class="container">--%>
         <div class="row">
-            <div class="col-md-2 logos">
+            <div class="col-md-2 logos conter-footer">
                 <a href="http://www3.uea.edu.br/">
                     <img class="img-logo-button" src="<%= request.getContextPath() %>/image/logo-uea.png"
                 alt="Logo UEA" />
                 </a>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-3">
                 <h5 class="text-light">UNIVERSIDADE DO ESTADO DO AMAZONAS</h5>
-    
                 <address class="text-light">
                     <strong>Sistema Integrado de Bibliotecas SIB/UEA</strong><br>
-                    <%--<p class="text-justify descricao">O Repositório Institucional da UEA tem a finalidade de tornar disponível em ambiente digital e interoperável, as produções científicas e acadêmicas, contribuindo para fortalecer o apoio ao processo de ensino e pesquisa. </p>--%>
                      +55 92 98410-6272<br>
                     <a class="text-light email-ri" href="mailto:bibliotecacentral@uea.edu.br">bibliotecacentral@uea.edu.br</a>
                 </address>
             </div>
-            <div class="col-md-2 logos">
-                <a href="http://www.ibict.br/">
-                    <img class ="img-ibict-logo" src="<%= request.getContextPath() %>/image/bannerIbict.png"
-                    alt="Logo Ibict"/>
-                </a>
+            <div class="col-md-2 logos conter-footer">
+                <img class="img-responsive img-ibict-logo" src="/image/logo_norte_riaa.png" alt="Logo NORTE_RIIA">
             </div>
-            <div class="col-md-3 logos">
-                <a href="http://redenorte.ufam.edu.br/">
-                    <img class="rede_norte" src="<%= request.getContextPath() %>/image/logo_rede_norte.jpeg" alt="Logo Rede norte"/>
-                </a>
+                
+            <div class="col-md-2 logos conter-footer">
+                <img class="img-responsive img-ibict-logo" src="/image/logo_riaa.png" alt="Logo RIIA">
+            </div>
+        
+            <div class="col-md-2 logos conter-footer">
+                <img class="img-responsive img-ibict-logo" src="/image/logo_ibict.png" alt="Logo IBICT">
             </div>
         </div>
     <%--</div>--%>

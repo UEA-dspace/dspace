@@ -108,3 +108,9 @@ main {
 .email-ri:hover{
     color: #fff;
 }
+
+.conter-footer{
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
